@@ -1,0 +1,66 @@
+<!--Sarah Xu, June 2, 2020-->
+<!--This file contains the content for the "contact.html" webpage-->
+
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="CSS/header-nav-footer.css">
+  <link rel="stylesheet" type="text/css" href="CSS/contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
+  <title>
+   Contact
+  </title>
+</head>
+<body>
+  <header>
+  <div class="flex-container">
+    <img src="images/logo.jpeg" width="250" height=auto></img>
+  </div>
+  </header>
+  <!--nav bar-->
+  <ul>
+    <li id="li1">Awesome Hangman Inc.</li>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <center>
+    <div class="contacting">
+      <h1>Contact</h1>
+      <h3>We would love to hear from you!</h3>
+      <p>Write something below or send us an email at <a href="mailto:awesomehangman@thebest.com">awesomehangman@thebest.com</a>.</p>
+    </div>
+    <br>
+  <!--form to contact Awesome Hangman Inc.-->
+  <form onsubmit="openModal()">
+    <label for="fname">First Name</label><br>
+    <input type="text" id="fname" name="firstname" class="input" placeholder="Please enter your first name:" required><br>
+    <label for="lname">Last Name</label><br>
+    <input type="text" id="lname" name="lastname" class="input" placeholder="Please enter your last name:" required><br>
+    <label for="email">E-mail</label><br>
+    <input type="text" id="email" name="email" class="input" placeholder="Please enter your e-mail:" required><br>
+    <label for="country">Country</label><br>
+    <select name="country" id="country" required>
+      <option value="">Select Country</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+      <option value="russia">Russia</option>
+      <option value="eu">European Union</option>
+      <option value="china">China</option>
+      <option value="japan">Japan</option>
+      <option value="korea">South Korea</option>
+    </select><br>
+    <label for="comments">Reason for contact</label><br>
+    <textarea id="comments" name="comments" class="comments" placeholder="Please write something down!" style="height:170px" required></textarea><br>
+    <br>Thank you for filling in the contact form. Pressing the Submit button will allow your response to be recorded.<br>
+    <input type="submit" value="Submit">
+  </form>
+  <footer align="center" id="footer">
+    <p><a href="home.html">Home</a><br>
+    <a href="about.html">About</a><br>
+    <a href="contact.html">Contact</a><br>
+    <a href="#top">Back to Top</a></p>
+    <p id="copy">&copy; Awesome Hangman Inc., ALL RIGHTS RESERVED</p><br>
+  </footer>
+</body>
+</html>

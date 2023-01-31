@@ -1,0 +1,130 @@
+/*Sarah Xu, June 2, 2020*/
+/*This file contains the styling information for gamepage.html*/
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  color:#f5f7f2;
+  height:100%;
+  text-align:center;
+  font-size:17px;
+  background-color:#2fc4c4;
+  margin-top:50px;
+  padding-bottom: 100px;
+  height: 100%;}
+h1{
+  color:#2457ff;
+}
+img{
+  max-height: 20%;
+  width:auto;
+}
+table{
+  margin-left:750px;
+}
+#options{
+  margin-left:0px;
+}
+
+/*CSS for the buttons, some applies only to the alphabet buttons*/
+button{
+  float:none;
+  margin:10px 10px 10px 0;
+  width:35px;
+  height:35px;
+  padding:10px;
+  background:white;
+  color:#42bcf5;
+  cursor:pointer;
+  border-radius: 5px;
+  border:solid 1px white;
+  transition-duration: 0.5s;
+  text-align: center;
+  font-size: 15px;
+}
+button:hover {
+  background:#4263f5;
+  border:solid 1px white;
+  color:white;
+}
+button:disabled {
+  opacity: 40%;
+}
+
+/*CSS for the Submit button(#submit), the hint button (#btnhint), and the play again/exit buttons (.yesnored)*/
+#submit, #btnhint, .yesnored{
+  border-radius: 20px;
+  width:200px;
+  height:40px;
+  color:white;
+}
+#submit:disabled, #btnhint:disabled {
+  opacity: 80%;
+}
+#submit:hover, #btnhint:hover, .yesnored:hover{
+  background:white;
+}
+#submit{
+  background:#ff36ae;
+}
+#submit:hover{
+  color:#ffa1f4;
+}
+#btnhint{
+  background:#8863f7;
+}
+#btnhint:hover{
+  color:#d3a1ff;
+}
+.yesnored {
+  background:#00d659;
+}
+.yesnored:hover{
+  color:#87fc60;
+}
+
+/*CSS for the background of the page when the modal box is open*/
+.modal{
+  display:none;
+  position:fixed;
+  padding-top:300px;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,0.4);
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-duration: 0.5s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/*CSS for the content of the modal box*/
+.content{
+  background-color:#ffc375;
+  margin:auto;
+  padding:20px;
+  width:50%;
+}
+
+/*CSS for the button that closes the modal box*/
+.close{
+  color:#74fcd1;
+  float:right;
+  font-size:28px;
+  font-weight:bold;
+}
+
+
+/*hover CSS for the email hyperlink*/
+a:hover{
+  color:#ff70e2;
+}

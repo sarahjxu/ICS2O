@@ -1,0 +1,59 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="calculator.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins|Tomorrow&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="calculator.js"></script>
+</head>
+<body>
+  <center>
+  <p>This is a calculator application! It can calculate the below functions. Calculations can be done in
+    a string (i.e. 1+2*3/5) or individually (i.e. 1+2=3, 3*2=6). This program does not follow BEDMAS and will
+    calculate numbers and operations in the order they were pressed. Another thing to keep in mind is that trigonometric
+    functions only calculate in degrees, not radians. To use the (-) sign, press it before the first number entered.
+    Happy calculating!</p>
+    <form>
+      <table>
+        <tr>
+          <td colspan="4">
+            <input type="text" id="screen" /><br></td></tr>
+        <tr>
+          <td><button type="button" onclick="setSign('√')" id="bOperation" class="badvfunc">√</button></td>
+          <td><button type="button" onclick="setSign('∛')" id="bOperation" class="badvfunc">∛</button></td>
+          <td><button type="button" onclick="setSign('n√')" id="bOperation" class="badvfunc">ⁿ√</button></td>
+          <td><button type="button" onclick="setSign('%')" id="bOperation" class="badvfunc">%</button></td></tr>
+        <tr>
+          <td><button type="button" onclick="setSign('x²')" id="bOperation" class="badvfunc">x²</button></td>
+          <td><button type="button" onclick="setSign('x³')" id="bOperation" class="badvfunc">x³</button></td>
+          <td><button type="button" onclick="setSign('xⁿ')" id="bOperation" class="badvfunc">xⁿ</button></td>
+          <td><button type="button" onclick="setSign('Exp')" id="bOperation" class="badvfunc">Exp</button></td></tr>
+        <tr>
+          <td><button type="button" onclick="setSign('sin')" id="bOperation" class="badvfunc">sin</button></td>
+          <td><button type="button" onclick="setSign('cos')" id="bOperation" class="badvfunc">cos</button></td>
+          <td><button type="button" onclick="setSign('tan')" id="bOperation" class="badvfunc">tan</button></td>
+          <td><button type="button" onclick="addNum(Math.PI)" id="bNum" class="badvfunc">π</button></td></tr>
+        <tr>
+          <td><button type="button" onclick="addNum(7)" id="bNum" class="bnum">7</button></td>
+          <td><button type="button" onclick="addNum(8)" id="bNum" class="bnum">8</button></td>
+          <td><button type="button" onclick="addNum(9)" id="bNum" class="bnum">9</button></td>
+          <td><button type="button" onclick="setSign('/')" id="bOperation" class="bop">/</button></td></tr>
+        <tr>
+          <td><button type="button" onclick="addNum(4)" id="bNum" class="bnum">4</button></td>
+          <td><button type="button" onclick="addNum(5)" id="bNum" class="bnum">5</button></td>
+          <td><button type="button" onclick="addNum(6)" id="bNum" class="bnum">6</button></td>
+          <td><button type="button" onclick="setSign('*')" id="bOperation" class="bop">x</button></td></tr>
+        <tr>
+          <td><button type="button" onclick="addNum(1)" id="bNum" class="bnum">1</button></td>
+          <td><button type="button" onclick="addNum(2)" id="bNum" class="bnum">2</button></td>
+          <td><button type="button" onclick="addNum(3)" id="bNum" class="bnum">3</button></td>
+          <td><button type="button" onclick="setSign('-')" id="bOperation" class="bop">-</button></td></tr>
+        <tr>
+          <td><button type="button" onclick="addNum(0)" id="bNum" class="bnum">0</button></td>
+          <td><button type="button" onclick="addNum('.')" id="bNum" class="bnum">.</button></td>
+          <td><button type="button" onclick="addNum('-')" id="bNum" class="bnum">(-)</button></td>
+          <td><button type="button" onclick="setSign('+')" id="bOperation" class="bop">+</button></td></tr>
+        <tr>
+          <td colspan="3"><button type="button" onclick="equalPressed()" id="bEqual">=</button></td>
+          <td><input type="reset" onclick="allClear()" value="AC" id="bClear"></td></tr>
+    </form>
+</body>
+</html>

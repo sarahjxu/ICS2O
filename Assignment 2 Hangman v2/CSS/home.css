@@ -1,0 +1,44 @@
+/*Sarah Xu, June 2, 2020*/
+/*This file contains the styling information for home.html*/
+
+body{
+	background-image: url("../images/bgimg1.jpg");
+	background-repeat: no-repeat;
+	background-attachment: cover;
+	background-size: 2000px 1000px;
+}
+
+/*CSS for the button to the game page*/
+input{
+	float:none;
+	margin:10px 10px 10px 0;
+	width:200px;
+	height:40px;
+	padding:10px;
+	color:white;
+	background:#007dd6;
+	cursor:pointer;
+	border-radius: 20px;
+	border:solid 1px white;
+	transition-duration: 0.5s;
+	text-align: center;
+	font-size: 15px;
+}
+input:hover {
+	background:#00c4d6;
+	border: solid 1px white;
+	color:white;
+}
+
+/*class for the div with the welcome message*/
+.centering {
+	width:50%;
+	color: black;
+	background-color: white;
+	opacity:0.9;
+	padding: 25px;
+}
+footer{
+	bottom: -144px;
+	height: 200px;
+}

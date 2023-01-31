@@ -1,0 +1,52 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="CSS/feedback.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
+  <title>
+   Feedback
+  </title>
+</head>
+<body>
+  <header>
+  <div class="flex-container">
+    <img src="images/logo.jpeg" width="250" height=auto></img>
+  </div>
+  </header>
+   <center><h1>Thank you for playing the Hangman game! We would love to hear your feedback!</h1><br><br><br>
+    <h3>How would you rate this game from 1-100, with 1 being terrible and 100 being spectacular?</h3><br>
+    <form action="home.html">
+      <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="80" class="slider" id="range">
+        <p>Rating: <span id="rating"></span></p>
+      </div>
+      <script>
+        var slider = document.getElementById("range");
+        var output = document.getElementById("rating");
+        output.innerHTML = slider.value;
+        slider.oninput = function() {
+          output.innerHTML = this.value;
+        }
+      </script>
+      <br><br><h3><label for="bestpart">What was the best part of the game? (select all that apply by holding the shift button)</label></h3>
+      <select name="choices" id="choices" multiple required>
+        <option value="choice1">Everything! It was great!</option>
+        <option value="choice2">The visuals/aesthetics of the game</option>
+        <option value="choice3">The randomized categories and words</option>
+        <option value="choice4">The prizes</option>
+        <option value="choice5">The option for hints</option>
+        <option value="choice6">Nothing, I will explain more in the comment box</option>
+      </select>
+      <br>
+      <h3><label for="comments">Any suggestions or comments?</label></h3>
+      <textarea id="comments" name="comments" class="comments" placeholder="Write down anything!" style="width:400px; height:150px" required></textarea><br>
+      <h3>Thank you for filling out the form! By clicking the button below, you will be redirected to the home page.</h3>
+      <input type="submit" value="Back to home page">
+    </form>
+    <br>
+    </center>
+  <footer align="center" id="footer">
+    <a href="#top">Back to Top</a></p>
+    <p id="copy">&copy; Awesome Hangman Inc., ALL RIGHTS RESERVED</p><br>
+  </footer>
+</body>
+</html>

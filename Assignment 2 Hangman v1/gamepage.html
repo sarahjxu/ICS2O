@@ -1,0 +1,73 @@
+<!--Sarah Xu, June 2, 2020-->
+<!--This file contains the content for the "gamepage.html" (the Hangman game) webpage-->
+
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="CSS/gamepage.css">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+  <title>
+    Play!
+  </title>
+</head>
+<body>
+  <script src="JS/gamepage.js"></script>
+  <center>
+  <h1>Let's play Hangman!</h1>
+  <!--div, p and h3 with ids to display the information from the javascript file-->
+  Please enter your name:
+  <input type="text" id="name" /><br><br>
+  <!--completes checkName(), then proceeds to start the game-->
+  <button type="button" onclick="checkName()" id="submit">Submit</button>
+  <!--greeting-->
+  <p id="hello"></p>
+  <!--name of category-->
+  <p id="category"></p>
+  <!--blanks for the answer-->
+  <p id="answer"></p>
+  <!--letters picked-->
+  <p id="picked"></p>
+  <!--lives left-->
+  <p id="lives"></p>
+  <!--alphabet buttons-->
+  <div id="btns"></div>
+  <!--hint button-->
+  <div id="hint"></div>
+  <!--given hint when hint button is pressed-->
+  <p id="clue"></p>
+  <table>
+    <tr>
+      <!--shows the "hanged man"-->
+      <td><div id="img"><img id="hangmanImage" src="images/10.png" /></div></td>
+      <td colspan="2">
+        <!--shows result (win/lose), the statistics of the player's playing, and the three choice buttons-->
+        <h3 id="result"></h3>
+        <p id="stats"></p>
+        <h4 id="choices"></h4>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <!--redirects to home.html-->
+      <td><p id="no"></p></td>
+      <!--lets the player play again-->
+      <td><p id="yes"></p></td>
+      <!--shows the player their prize and how to claim it-->
+      <td><p id="redeem"></p></td>
+    </tr>
+  </table>
+  <!--The modal box with pize claim information-->
+  <div id="modal" class="modal">
+    <!--The content of the modal box-->
+    <div class="content">
+      <!--the prize that was earned-->
+      <p id="redeemedprize"></p>
+      <!--the redeem code for the prize-->
+      <p id="code"></p>
+      <!--how to receive the proze-->
+      <p>Please email <a href="mailto:awesomehangman@thebest.com">awesomehangman@thebest.com</a> and send us your reference code to get your prize.<br><br>
+      <i>Click outside this box to close this notification.</i></p>
+    </div>
+  </div>
+  <script src="JS/redeem.js"></script>
+</body>
+</html>

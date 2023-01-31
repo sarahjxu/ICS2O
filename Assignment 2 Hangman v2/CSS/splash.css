@@ -1,0 +1,58 @@
+/*Sarah Xu, June 2, 2020*/
+/*This file contains the styling information for splash.html*/
+
+body{
+  background-image: url("../images/bgimg3.jpeg");
+  height: 90%;
+  background-repeat: no-repeat;
+  background-attachment: cover;
+  background-position: center;
+  background-size: cover;
+  margin:0;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.yello{
+  background-color:#faffb0;
+  position:fixed;
+  width:100%;
+  height:100%;
+  opacity:0.8;
+}
+
+.center{
+  width: 400px;
+  height: 100px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 1s;
+  position: absolute;
+  left: 40%;
+  top: 30%;
+}
+
+@keyframes example {
+  0%   {left:0px;}
+}
+
+/*CSS for the two buttons*/
+input{
+	float:none;
+	margin:10px 10px 10px 0;
+	width:180px;
+	height:40px;
+	padding:10px;
+	color:white;
+	background:#990dfc;
+	cursor:pointer;
+	border-radius: 20px;
+	border:solid 1px white;
+	transition-duration: 0.4s;
+	text-align: center;
+	font-size: 15px;
+}
+input:hover {
+	background:#fcbc0d;
+	border: solid 1px white;
+	color:white;
+}

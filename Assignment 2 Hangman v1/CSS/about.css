@@ -1,0 +1,30 @@
+/*Sarah Xu, June 2, 2020*/
+/*This file contains the styling information for about.html*/
+
+body{
+	background-image: url("../images/bgimg2.jpeg");
+  height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: cover;
+  background-position: center;
+  background-size: cover;
+}
+/*class for the div about Awesome Hangman Inc.*/
+.intro {
+  width: 50%;
+	color: black;
+	background-color: white;
+	opacity:0.9;
+	padding: 25px;
+}
+/*class for the div about the creator*/
+.creator {
+  width:50%;
+	color: black;
+	background-color: #fff07d;
+	opacity:0.9;
+	padding: 25px;
+}
+footer{
+	bottom: -90px;
+}

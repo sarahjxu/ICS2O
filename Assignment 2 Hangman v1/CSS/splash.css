@@ -1,0 +1,50 @@
+/*Sarah Xu, June 2, 2020*/
+/*This file contains the styling information for splash.html*/
+
+body{
+  background-image: url("../images/bgimg3.jpeg");
+  height: 90%;
+  background-repeat: no-repeat;
+  background-attachment: cover;
+  background-position: center;
+  background-size: cover;
+  margin:0;
+  font-family: 'Libre Franklin', sans-serif;
+}
+div{
+  background-color:#faffb0;
+  position:fixed;
+  width:100%;
+  height:100%;
+  opacity:0.8;
+}
+
+/*CSS for the class of the div to make the text appear in the middle of the screen and the yellow background colour to fit over the background image perfectly*/
+.center{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -15%);
+}
+
+/*CSS for the two buttons*/
+input{
+	float:none;
+	margin:10px 10px 10px 0;
+	width:180px;
+	height:40px;
+	padding:10px;
+	color:white;
+	background:#990dfc;
+	cursor:pointer;
+	border-radius: 20px;
+	border:solid 1px white;
+	transition-duration: 0.4s;
+	text-align: center;
+	font-size: 15px;
+}
+input:hover {
+	background:#fcbc0d;
+	border: solid 1px white;
+	color:white;
+}
