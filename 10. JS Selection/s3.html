@@ -1,0 +1,68 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <style>
+    body {
+      text-align: center;
+      vertical-align: middle;
+      font-size: 20px;
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+    img {
+      align: middle;
+      height: 70%;
+      width: auto;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    alert ("This is a horoscope identifier. Please enter your month of birth and date of birth.");
+    var month = prompt("Please enter your month of birth in numbers.");
+    month = Number(month);
+    var date = prompt("Please enter your date of birth in numbers.");
+    date = Number(date);
+    if ((month > 12) || (month < 1) || (date > 31) || (date < 1)) {
+      document.write ("<br><br>Invalid birthday entered. Please try again.");
+    } else if ((month==2 && date>29) || (month==4 && date>30) || (month==6 && date>30) || (month==9 && date>30) || (month==11 && date>30)) {
+      document.write ("<br><br>Invalid birthday entered. Please try again.");
+    } else if ((month == 1 && date>=20) || (month==2 && date<=18)) {
+      document.write ("<br><br>You are an Aquarius.<br><br><br>");
+      document.write('<style type="text/css">body{background-color: #94d0f2;}"></style><img src="aquarius.jpg">');
+    } else if ((month == 2 && date>=19) || (month==3 && date<=20)) {
+      document.write ("<br><br>You are a Pisces.<br><br>");
+      document.write('<style type="text/css">body{background-color: #afded4;}"></style><img src="pisces.jpg">');
+    } else if ((month == 3 && date>=21) || (month==4 && date<=19)) {
+      document.write ("<br><br>You are an Aries.<br><br>");
+      document.write('<style type="text/css">body{background-color: #fa9b9b;}"></style><img src="aries.jpg">');
+    } else if ((month == 4 && date>=20) || (month==5 && date<=20)) {
+      document.write ("<br><br>You are a Taurus.<br><br>");
+      document.write('<style type="text/css">body{background-color: #96d69d;}"></style><img src="taurus.jpg">');
+    } else if ((month == 5 && date>=21) || (month==6 && date<=20)) {
+      document.write ("<br><br>You are a Gemini.<br><br>");
+      document.write('<style type="text/css">body{background-color: #ae57ff;}"></style><img src="gemini.jpg">');
+    } else if ((month == 6 && date>=21) || (month==7 && date<=22)) {
+      document.write ("<br><br>You are a Cancer.<br><br>");
+      document.write('<style type="text/css">body{background-color: #dba48a;}"></style><img src="cancer.jpg">');
+    } else if ((month == 7 && date>=23) || (month==8 && date<=22)) {
+      document.write ("<br><br>You are a Leo.<br><br>");
+      document.write('<style type="text/css">body{background-color: #f27272;}"></style><img src="leo.jpg">');
+    } else if ((month == 8 && date>=23) || (month==9 && date<=22)) {
+      document.write ("<br><br>You are a Virgo.<br><br>");
+      document.write('<style type="text/css">body{background-color: #d1ace6;}"></style><img src="virgo.jpg">');
+    } else if ((month == 9 && date>=23) || (month==10 && date<=22)) {
+      document.write ("<br><br>You are a Libra.<br><br>");
+      document.write('<style type="text/css">body{background-color: #c0e4eb;}"></style><img src="libra.jpg">');
+    } else if ((month == 10 && date>=23) || (month==11 && date<=21)) {
+      document.write ("<br><br>You are a Scorpio.<br><br>");
+      document.write('<style type="text/css">body{background-color: #ffa8ef;}"></style><img src="scorpio.jpg">');
+    } else if ((month == 11 && date>=22) || (month==12 && date<=21)) {
+      document.write ("<br><br>You are a Sagittarius.<br><br>");
+      document.write('<style type="text/css">body{background-color: #7c62fc;}"></style><img src="sagittarius.jpg">');
+    } else if ((month == 12 && date>=22) || (month==1 && date<=19)) {
+      document.write ("<br><br>You are a Capricorn.<br><br>");
+      document.write('<style type="text/css">body{background-color: #a6aaff;}"></style><img src="capricorn.jpg">');
+    }
+  </script>
+</body>
+</html>

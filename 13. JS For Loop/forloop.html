@@ -1,0 +1,119 @@
+<html>
+<head>
+  <style>
+  </style>
+</head>
+<body>
+  <script>
+  function countA(){
+    var num1 = Number(document.getElementById("screena").value);
+    var num2 = Number(document.getElementById("screen1a").value);
+    if (num2>num1){
+      for (counter = num1; counter <= num2; counter++){
+        document.getElementById("screen1").innerHTML += counter + " ";
+      }
+    } else if (num1>num2){
+      for (counter = num2; counter <= num1; counter++){
+        document.getElementById("screen1").innerHTML += counter + " ";
+      }
+    }
+  }
+  function countB() {
+    var num1 = Number(document.getElementById("screenb").value);
+    var num2 = Number(document.getElementById("screen2b").value);
+    if ((num2>num1) && (num1%2!=0)){
+      for (counter = num1+1; counter <= num2; counter=counter+2){
+        document.getElementById("screen2").innerHTML += counter + " ";
+      }
+    } else if ((num2>num1)&&(num1%2==0)){
+      for (counter = num1; counter <= num2; counter=counter+2){
+        document.getElementById("screen2").innerHTML += counter + " ";
+      }
+    } else if ((num1>num2)&&(num2%2!=0)){
+      for (counter = num2+1; counter <= num1; counter=counter+2){
+        document.getElementById("screen2").innerHTML += counter + " ";
+      }
+    } else if ((num1>num2)&&(num2%2==0)){
+      for (counter = num2; counter <= num1; counter=counter+2){
+        document.getElementById("screen2").innerHTML += counter + " ";
+      }
+    }
+  }
+  function countC (){
+    var num1 = Number(document.getElementById("screenc").value);
+    var num2 = Number(document.getElementById("screen3c").value);
+    if (num2>num1){
+      for (counter = num2; counter >= num1; counter--){
+        document.getElementById("screen3").innerHTML += counter + " ";
+      }
+    } else {
+      for (counter = num1; counter >= num2; counter--){
+        document.getElementById("screen3").innerHTML += counter + " ";
+      }
+    }
+  }
+  function suM(){
+    var num1 = Number(document.getElementById("screend").value);
+    var num2 = Number(document.getElementById("screen4d").value);
+    var sum = 0;
+    var input = 0;
+    for (i = num1; i <= num2; i++){
+        var input = i;
+        sum = (sum + input)
+        if (input==num2){
+          document.getElementById("screen4").innerHTML += i + " = " + sum;
+        } else {
+          document.getElementById("screen4").innerHTML += i + " + ";
+        }
+      }
+    }
+    function wordS(){
+      var input = document.getElementById("screene").value;
+      var spaces = input.split(" ").length;
+      document.getElementById("screen5").innerHTML = "There are " + spaces + " words."
+    }
+  </script>
+    CounterA: <br><br>
+    Enter first number:<br>
+    <input type="text" id="screena" /><br><br>
+    Enter second number:<br>
+    <input type="text" id="screen1a" /><br><br>
+    <button type="button" onclick="countA()">Submit</button><br><br>
+    Output:<br>
+    <p id="screen1"></p><br>
+
+    CounterB: <br><br>
+    Enter first number:<br>
+    <input type="text" id="screenb" /><br><br>
+    Enter second number:<br>
+    <input type="text" id="screen2b" /><br><br>
+    <button type="button" onclick="countB()">Submit</button><br><br>
+    Output:<br>
+    <p id="screen2"></p><br>
+
+    CounterC: <br><br>
+    Enter first number:<br>
+    <input type="text" id="screenc" /><br><br>
+    Enter second number:<br>
+    <input type="text" id="screen3c" /><br><br>
+    <button type="button" onclick="countC()">Submit</button><br><br>
+    Output:<br>
+    <p id="screen3"></p><br>
+
+    Sum: <br><br>
+    Enter first number:<br>
+    <input type="text" id="screend" /><br><br>
+    Enter second number:<br>
+    <input type="text" id="screen4d" /><br><br>
+    <button type="button" onclick="suM()">Submit</button><br><br>
+    Output:<br>
+    <p id="screen4"></p><br>
+
+    Number of Words: <br><br>
+    Enter string:<br>
+    <input type="text" id="screene" /><br><br>
+    <button type="button" onclick="wordS()">Submit</button><br><br>
+    Output:<br>
+    <p id="screen5"></p><br>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <style>
+    body{
+      background-image: url("milkyway.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+      vertical-align: center;
+      color: white;
+      font-size: 40px;
+      font-family: 'Source Sans Pro', sans-serif;
+      margin-top: 300px;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    alert ("This is a leap year identifier. Press OK to continue");
+    var year = prompt("Please enter a year in numbers.");
+    year = Number(year);
+    if ((year%4==0 && year%100!=0 && year!=0) || (year%400==0 && year%4==0 && year%100==0 && year!=0)){
+      document.write (year + "<br>is a leap year.")
+    } else {
+      document.write (year + " is not a leap year.")
+    }
+  </script>
+</body>
+</html>

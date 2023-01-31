@@ -1,0 +1,41 @@
+<html>
+<head>
+  <style>
+    body{
+      background-color: #03dbfc;
+    }
+    h1{
+      color: #6100eb;
+    }
+    button{
+      background-color: #f5bae8;
+      border-radius: 8px;
+      width: 200px;
+      height: 75px;
+      font-size: 16px;
+      transition-duration: 0.4s;
+    }
+    button:hover {
+      background-color: #00d1ae;
+      color: white;
+    }
+    p{
+      font-size: 25px;
+    }
+  </style>
+</head>
+<body>
+  <script>
+  function p1(){
+    var arr = Array.from({length: 10}, () => Math.floor(100*Math.random()+1));
+    var avrge = arr.reduce((acc, val) => acc + val)/arr.length;
+    var max = Math.max(...arr);
+    document.getElementById("screen").innerHTML = ("The array consists of: " + arr + "<br> The average of the numbers is: " + avrge + "<br>The max value of the array is: " + max);
+  }
+  </script>
+<center><h1>This application will display 10 random numbers from 1-100, calculate their
+average, and find the maximum value within the numbers.</h1><br>
+<button onclick="p1()">Start/Reset</button><br>
+<p id="screen"></p>
+</body>
+</html>

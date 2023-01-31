@@ -1,0 +1,44 @@
+<html>
+<head>
+  <style>
+    body{
+      background-color: #ffc4f0;
+    }
+    h1{
+      color: #0027a6;
+    }
+    button{
+      background-color: #9a1ce8;
+      border-radius: 8px;
+      width: 200px;
+      height: 75px;
+      font-size: 16px;
+      color: white;
+      transition-duration: 0.4s;
+    }
+    button:hover {
+      background-color: #00bbcc;
+      color: white;
+    }
+    p{
+      font-size: 25px;
+    }
+  </style>
+</head>
+<body>
+  <script>
+  var characteristics = ["intellect", "eyes", "speed", "agility", "hands", "aura", "charisma", "confidence"]
+  var adjectives = ["brilliant", "beautiful", "skilled", "beloved", "revered", "talented", "great", "incredible"]
+  var nouns = ["genius", "ace", "superstar", "role-model", "leader", "computer expert", "doctor", "superhero"]
+  function compliment(){
+    var arr1=characteristics[Math.floor(Math.random()*characteristics.length)];
+    var arr2=adjectives[Math.floor(Math.random()*adjectives.length)];
+    var arr3=nouns[Math.floor(Math.random()*nouns.length)];
+    document.getElementById("screen1").innerHTML = "You have the " + arr1 + " of a " + arr2 + " " + arr3 + ".";
+  }
+  </script>
+  <center><h1>This is a compliment generator. Press the Start/Reset to begin.</h1>
+  <button onclick="compliment()">I shall compliment you!</button>
+  <p id="screen1"></p>
+</body>
+</html>

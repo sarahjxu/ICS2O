@@ -1,0 +1,101 @@
+<html>
+<head>
+  <style>
+  </style>
+</head>
+<body>
+<script>
+  function recArea(){
+    var l = Number(document.getElementById("myLength").value);
+    var w = Number(document.getElementById("myWidth").value);
+    document.getElementById("rareaParagraph").innerHTML = l*w;
+  }
+  function recPerimeter(){
+    var x = Number(document.getElementById("rectlength").value);
+    var y = Number(document.getElementById("rectwidth").value);
+    document.getElementById("rperiParagraph").innerHTML = (2*(x+y));
+  }
+  function triArea(){
+    var b = Number(document.getElementById("tribase").value);
+    var h = Number(document.getElementById("triheight").value);
+    document.getElementById("tareaParagraph").innerHTML = ((b*h)/2);
+  }
+  function triPerimeter(){
+    var a = Number(document.getElementById("aside").value);
+    var b = Number(document.getElementById("bside").value);
+    var c = Number(document.getElementById("cside").value);
+    document.getElementById("tperiParagraph").innerHTML = (a+b+c);
+  }
+</script>
+<center>
+<table width="1300" height="500">
+  <tr>
+    <td valign="top">
+      <form>
+        Calculate the Area of a Rectangle: <br><br>
+        Length:<br>
+        <input type="text" id = "myLength">
+        <br>
+        Width:<br>
+        <input type="text" id = "myWidth">
+        <br><br>
+        <button type="button" onclick="recArea()">Calculate Area</button>
+        <br>
+      </form>
+      <br>
+      The area is:
+      <p id="rareaParagraph"></p>
+    </td>
+    <td valign="top">
+      <form>
+        Calculate the Perimeter of a Rectangle: <br><br>
+        Length:<br>
+        <input type="text" id = "rectlength">
+        <br>
+        Width:<br>
+        <input type="text" id = "rectwidth">
+        <br><br>
+        <button type="button" onclick="recPerimeter()">Calculate Perimeter</button>
+        <br>
+      </form>
+      <br>
+      The perimeter is:
+      <p id="rperiParagraph"></p>
+    </td>
+    <td valign="top">
+      <form>
+        Calculate the Area of a Triangle: <br><br>
+        Base:<br>
+        <input type="text" id = "tribase">
+        <br>
+        Height:<br>
+        <input type="text" id = "triheight">
+        <br><br>
+        <button type="button" onclick="triArea()">Calculate Area</button>
+        <br>
+      </form>
+      <br>
+      The area is:
+      <p id="tareaParagraph"></p>
+    </td>
+    <td valign="top">
+      <form>
+        Calculate the Perimeter of a Triangle: <br><br>
+        Side A:<br>
+        <input type="text" id = "aside">
+        <br>
+        Side B:<br>
+        <input type="text" id = "bside">
+        <br>
+        Side C:<br>
+        <input type="text" id = "cside">
+        <br><br>
+        <button type="button" onclick="triPerimeter()">Calculate Perimeter</button>
+        <br>
+      </form>
+      <br>
+      The perimeter is:
+      <p id="tperiParagraph"></p>
+    </td>
+</body>
+</html>

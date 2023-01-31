@@ -1,0 +1,159 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <style>
+    body{
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+  </style>
+</head>
+<body>
+<script>
+  function iCity(){
+    var city = document.getElementById("city").value;
+    var ans1 = "Corinth"
+    document.getElementById("uans1").innerHTML = ans1;
+  }
+  function iMarch(){
+    var julius = document.getElementById("julius").value;
+    var ans2 = "Julius Caesar"
+    document.getElementById("uans2").innerHTML = ans2;
+  }
+  function iStatus(){
+    var status = document.getElementById("status").value;
+    var ans3 = "Middle Class"
+    document.getElementById("uans3").innerHTML = ans3;
+  }
+  function iMona(){
+    var museum = document.getElementById("museum").value;
+    var ans4 = "The Louvre"
+    document.getElementById("uans4").innerHTML = ans4;
+  }
+  function iBts(){
+    var kpop = document.getElementById("kpop").value;
+    var ans5 = "2013-6-13"
+    document.getElementById("uans5").innerHTML = ans5;
+  }
+  function iAnime(){
+    var anime = document.getElementById("anime").value;
+    var ans6 = "Fullmetal Alchemist: Brotherhood"
+    document.getElementById("uans6").innerHTML = ans6;
+  }
+  function iFran(){
+    var f = document.getElementById("f").value;
+    var ans7 = "87"
+    document.getElementById("uans7").innerHTML = ans7;
+  }
+</script>
+<center>
+  <br><h1>Answer these 7 questions!</h1>
+</center>
+<table cellpadding="5" cellspacing="20">
+  <tr>
+    <td valign="top">
+      <form>
+      Which of the below is NOT an Italian city name?
+      <br><br>
+        <select name="cities" id="city">
+          <option value="rome">Rome</option>
+          <option value="corinth">Corinth</option>
+          <option value="naples">Naples</option>
+          <option value="venice">Venice</option>
+        </select>
+        <br><br>
+        <button type="button" onclick="iCity()">Submit</button>
+        <br><br>
+        The answer is:
+        <p id="uans1"></p>
+      </td>
+      <td valign="top">
+        Who was warned to "beware the Ides of March"? (HINT: the name of a Shakespeare play)
+        <br><br>
+          <textarea name="march" id="julius"></textarea>
+          <br><br>
+          <button type="button" onclick="iMarch()">Submit</button>
+          <br><br>
+          The answer is:
+          <p id="uans2"></p>
+      </td>
+      <td valign="top">
+        "Bourgeoisie" is a term used to describe the:
+        <br><br>
+        <input list="status">
+        <datalist id="status">
+          <option value="Royalty">
+          <option value="Upper Class">
+          <option value="Middle Class">
+          <option value="Lower Class">
+        </datalist>
+        <br><br>
+        <button type="button" onclick="iStatus()">Submit</button>
+        <br><br>
+        The answer is:
+        <p id="uans3"></p>
+      </td>
+      <td valign="top">
+        Which of these famous museums houses <i>The Mona Lisa</i>?
+        <br><br>
+          <input type="radio" id="museum" name="museum" value="gugg">The Guggenheim<br>
+          <input type="radio" id="museum" name="museum" value="louvre">The Louvre<br>
+          <input type="radio" id="museum" name="museum" value="met">The Metropolitan Museum of Art<br>
+          <input type="radio" id="museum" name="museum" value="getty">The Getty Center<br>
+          <br>
+          <button type="button" onclick="iMona()">Submit</button>
+          <br><br>
+          The answer is:
+          <p id="uans4"></p>
+      </td></tr></table>
+    <center><table cellpadding="5" cellspacing="40"><tr>
+      <td valign="top">
+        When did kpop boy group BTS debut?
+        <br><br>
+        <input type="date" id="kpop" name="debut">
+        <br><br>
+        <button type="button" onclick="iBts()">Submit</button>
+        <br><br>
+        The answer is:
+        <p id="uans5"></p>
+      </td>
+      <td valign="top">
+        Which shonen anime is depicted in the picture below?
+        <br><br>
+        <img src = "fullmetal.jpg">
+        <br><br>
+        <input type="checkbox" id="anime" name="anime" value="FMAB">Fullmetal Alchemist: Brotherhood<br>
+        <input type="checkbox" id="anime" name="anime" value="OP">One Piece<br>
+        <input type="checkbox" id="anime" name="anime" value="NS">Naruto Shippuden<br>
+        <input type="checkbox" id="anime" name="anime" value="AC">Assassination Classroom<br>
+          <br>
+          <button type="button" onclick="iAnime()">Submit</button>
+          <br><br>
+          The answer is:
+          <p id="uans6"></p>
+        </form>
+      </td>
+      <td valign="top">
+        What is the atomic number of Francium?
+        <br><br>
+        <form oninput="x.value=parseInt(f.value)">
+          0<input type="range" id="f" name="a" value="50">100 = <output name="x" for="a"></output>
+          <br><br>
+          <br><br>
+          <button type="button" onclick="iFran()">Submit</button>
+          <br><br>
+          The answer is:
+          <p id="uans7"></p></form>
+        <br><br>
+        <output name="x" for="element num"></output>
+      </form>
+      </td></tr></table>
+        <br><br>
+Receive your results by email:
+<form>
+<br>
+  <input type="email" name="email">
+<br><br>
+  <input type="submit" name="submit">
+</form>
+</body>
+</html>

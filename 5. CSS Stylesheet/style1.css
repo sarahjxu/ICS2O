@@ -1,0 +1,22 @@
+body{
+	background-color: #b3e7ff;
+	background-image: url("https://www.androidpolice.com/wp-content/uploads/2018/10/Pixel-Camera-in-hand-bokeh-hero-1.jpg");
+	background-repeat: repeat;
+	background-position: center center;
+	background-attachment: scroll;
+	background-size: cover;
+	margin: 10px;
+	color: black;
+	border: white;
+}
+h2{color:#993300;
+	font-family: Georgia;
+	background-color: periwinkle;
+	text-align: right;
+}
+p{color: #ffe6f3;
+	font-family:Courier New;
+	text-align: left;
+	font: 14px
+}
+

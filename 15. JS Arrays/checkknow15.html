@@ -1,0 +1,47 @@
+<html>
+<head>
+  <style>
+  </style>
+</head>
+<body>
+<!--Knowledge Review-->
+  <ol type="1">
+  <li>In situations when dealing with ALL the elements of the array (ie, filling or printing an entire array), a <b>for loop </b>should be used.</li>
+  <li>
+    <ol type="a">
+      <li>sample[2]=28</li>
+      <li>sample[9]=(sample[1]+sample[2])</li>
+      <li>sample[7]=sample[0]</li>
+      <li>let sample = new Array(MAXSIZE).fill(0)</li>
+      <li>sample[0]=temp<br>sample[1]=sample[0]<br>sample[1]=temp</li>
+    </ol>
+  </li>
+  <li>
+    <ol type="a">
+      <li>var marks=new Array(27);</li>
+      <li>var studnum=new Array(27);</li>
+      <li>let marks = new Array(27).fill(90)</li>
+      <li>var studnum = Array.from({length: 27}, () => Math.floor(999*Math.random()+100))<br><br>
+Arrays Practice <br>
+d.
+  <script>
+    //arrays practice
+    //a
+    var test1 = new Array(4);
+    //b
+    test1[0] = Number("98");
+    test1[1] = Number("87");
+    test1[2] = Number("64");
+    test1[3] = Number("82");
+    //c
+    alert("c. " + test1[2]);
+    //d
+    for (i=0; i<test1.length; i++){
+      document.write(test1[i] + " ");
+    }
+    //e
+    var average=(test1[0]+test1[1]+test1[2]+test1[3])/4;
+    document.write("<br>e. " + average);
+  </script>
+</body>
+</html>

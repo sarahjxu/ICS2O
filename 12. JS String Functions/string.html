@@ -1,0 +1,87 @@
+<html>
+<head>
+<style>
+</style>
+<script>
+  function aWord(){
+    var uWord = document.getElementById("screen").value;
+    var fNum = uWord.substring (0, 1);
+    var fRest = uWord.substring (1);
+    if (fNum == "a" || fNum == "e" || fNum == "i" || fNum == "o" || fNum == "u" || fNum == "y" ){
+      document.getElementById("screenres").innerHTML=(fRest+fNum);
+    } else {
+      document.getElementById("screenres").innerHTML=(uWord + "ly");
+    }
+  }
+  function bWord() {
+    var uWord1 = document.getElementById("screen1").value;
+    var uSub = document.getElementById("screen2").value;
+    var ulength = uWord1.length;
+    var uSearch = uWord1.indexOf(uSub);
+    var uSearch1 = uWord1.lastIndexOf(uSub);
+    document.getElementById("screenres1").innerHTML= ("Length of string: " + ulength + "<br>The substring " + uSub + " first appears in " + uWord1 + " at index " + uSearch + "<br>The substring " + uSub + " last appears in " + uWord1 + " at index " + uSearch1);
+  }
+  function cWord(){
+    var word3 = document.getElementById("screen3").value;
+    var sub3 = document.getElementById("screen4").value;
+    var arr = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+    var cLetter = arr[Math.floor(Math.random()*arr.length)];
+    var search3 = word3.indexOf(sub3);
+    var replce = word3.replace(sub3, cLetter);
+    if (search3==-1){
+      document.getElementById("screenres3").innerHTML = ("The word " + word3 + " does not contain the substring " + sub3);
+    } else {
+      document.getElementById("screenres3").innerHTML = ("The word " + word3 + " contains " + sub3 + "<br>The random letter is " + cLetter + "<br> The new word is " + replce)
+    }
+  }
+  function dWord(){
+    var string1 = document.getElementById("screen5").value;
+    var string2 = document.getElementById("screen6").value;
+    var string3 = document.getElementById("screen7").value;
+    var s1 = string1.toUpperCase();
+    var s2 = string2.toUpperCase();
+    var s3 = string3.toUpperCase();
+    var strings = [s1+" <br>", s2 + " <br>", s3 + " <br>"];
+    strings.sort();
+    document.getElementById("screenres4").innerHTML = ("The strings in order are: <br>") + strings.join(' ')
+  }
+</script>
+</head>
+<body>
+  Exercise 1: <br><br>
+  Enter Word:<br>
+  <input type="text" id="screen" /><br><br>
+  <button type="button" onclick="aWord()">Submit</button><br><br>
+  Output:<br>
+  <p id="screenres"></p><br>
+  <hr>
+  Exercise 2: <br><br>
+  Enter Word:<br>
+  <input type="text" id="screen1" /><br><br>
+  Enter Search: <br>
+  <input type="text" id="screen2" /><br><br>
+  <button type="button" onclick="bWord()">Submit</button><br><br>
+  Output:<br>
+  <p id="screenres1"></p><br>
+  <hr>
+  Exercise 3: <br><br>
+  Enter Word:<br>
+  <input type="text" id="screen3" /><br><br>
+  Enter Substring: <br>
+  <input type="text" id="screen4" /><br><br>
+  <button type="button" onclick="cWord()">Submit</button><br><br>
+  Output:<br>
+  <p id="screenres3"></p><br>
+  <hr>
+  Exercise 4: <br><br>
+  Enter first string:<br>
+  <input type="text" id="screen5" /><br><br>
+  Enter second string: <br>
+  <input type="text" id="screen6" /><br><br>
+  Enter third string:<br>
+  <input type="text" id="screen7" /><br><br>
+  <button type="button" onclick="dWord()">Submit</button><br><br>
+  Ouput:<br>
+  <p id="screenres4"></p><br>
+</body>
+</html>

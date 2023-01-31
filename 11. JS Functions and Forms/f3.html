@@ -1,0 +1,33 @@
+<html>
+<head>
+  <style>
+  </style>
+</head>
+<body>
+  <script>
+    var a = Math.floor(127 * Math.random() + 1);
+    var b = Math.floor(127 * Math.random() + 1);
+    var arr=["+", "-", "/", "*"];
+    var ans;
+    operation=arr[Math.floor(Math.random()*arr.length)];
+    function randomMath(arr, operation, a, b){
+      if (operation=="+"){
+        ans = (a+b);
+      } else if (operation=="-"){
+        ans = (a-b);
+      } else if (operation=="*"){
+        ans = (a*b);
+      } else {
+        ans = (a/b);
+      }
+      return a + operation + b;
+    }
+    var uAns = prompt("What is " + randomMath(arr, operation, a, b));
+    if (ans==uAns){
+      alert("You are correct.");
+    } else {
+      alert("You are incorrect. The answer is " + ans);
+    }
+  </script>
+</body>
+</html>

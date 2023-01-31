@@ -1,0 +1,27 @@
+<html>
+<head>
+  <script>
+    alert("Welcome!\nPlease the amount of money less than one dollar in cents. This program will calculate the amounts of coin needed to make change.");
+    var cents = prompt ("Please enter the amount of cents between 1-100");
+    quarters = Math.floor (cents/25);
+    quarters = Number(quarters);
+    remquarters = cents%25;
+    remquarters = Number(remquarters);
+    dimes = Math.floor (remquarters/10);
+    dimes = Number(dimes);
+    remdimes = remquarters%10;
+    remdimes = Number(remdimes);
+    nickels = Math.floor (remdimes/10);
+    nickels = Number(nickels);
+    remnickels = remdimes%5;
+    remnickels = Number(remnickels);
+    pennies = Math.floor (remnickels/1);
+    pennies = Number(pennies);
+    rempennies = remnickels%1;
+    rempennies = Number(rempennies);
+    alert("The total is = " + quarters + " quarters, " + dimes + " dimes, " + nickels + " nickels, and " + pennies + " pennies.");
+  </script>
+</head>
+<body>
+</body>
+</html>

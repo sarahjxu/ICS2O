@@ -1,0 +1,28 @@
+<html>
+<head>
+  <style>
+  </style>
+</head>
+<body>
+  <script>
+    var score = prompt("Enter a score in numbers");
+    score=Number(score);
+    function letterGrade(score){
+      if ((score<0)||(score>100)){
+        return "Invalid entry"
+      } else if ((score>80)&&(score<=100)){
+        return "Level 4"
+      } else if ((score>70) && (score<=80)){
+        return "Level 3"
+      } else if ((score>60) && (score<=70)){
+        return "Level 2"
+      } else if ((score>50) && (score<=60)){
+        return "Level 1"
+      } else {
+        return "Level R"
+      }
+    }
+    alert("Your score is " + letterGrade(score) + ".");
+  </script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<html>
+<head>
+  <style>
+    body {
+      margin-left: 20px;
+    }
+    input {
+      width:200px;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    function passWord(){
+      var arr=["eccedentesiast", "serein", "saudade", "paralian", "lacuna", "oneirataxia", "thalassophile", "psithurism", "nefelibata", "syzygy"];
+      var secretWord=arr[Math.floor(Math.random()*arr.length)];
+      var input = prompt("What is the password?");
+      var finished = false;
+      alert(secretWord)
+      while (!finished) {
+        if (input == secretWord)
+        finished = true;
+        else
+        input=prompt("try again");
+      } document.getElementById("screen1").innerHTML="Password correct.";
+    }
+    function countLetters() {
+        var s = prompt("Enter string");
+        var n = 0;
+            i = 0;
+        while (true) {
+            i = s.indexOf("a", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        } while (true) {
+            i = s.indexOf("b", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        }while (true) {
+            i = s.indexOf("c", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        }while (true) {
+            i = s.indexOf("d", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        }while (true) {
+            i = s.indexOf("e", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        }while (true) {
+            i = s.indexOf("f", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        }while (true) {
+            i = s.indexOf("g", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        }while (true) {
+            i = s.indexOf("h", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        }while (true) {
+            i = s.indexOf("i", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        }while (true) {
+            i = s.indexOf("i", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        }while (true) {
+            i = s.indexOf("k", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        }while (true) {
+            i = s.indexOf("l", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        }while (true) {
+            i = s.indexOf("m", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        }while (true) {
+            i = s.indexOf("n", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        }while (true) {
+            i = s.indexOf("o", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        }while (true) {
+            i = s.indexOf("p", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        }while (true) {
+            i = s.indexOf("q", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        }while (true) {
+            i = s.indexOf("r", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        }while (true) {
+            i = s.indexOf("s", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        }while (true) {
+            i = s.indexOf("t", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        }while (true) {
+            i = s.indexOf("u", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        }while (true) {
+            i = s.indexOf("v", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        }while (true) {
+            i = s.indexOf("w", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        }while (true) {
+            i = s.indexOf("x", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        }while (true) {
+            i = s.indexOf("y", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        }while (true) {
+            i = s.indexOf("z", i);
+            if (i >= 0) {
+                n++;
+                i++;
+            } else
+                break;
+        }
+        document.getElementById("screen2").innerHTML = "There are " + n + " letters.";
+    }
+    function hackerSpeak(){
+      var string=document.getElementById("screen3c").value;
+      var rplcA="4";
+      var rplcE="3";
+      var rplcI="1";
+      var rplcO="0";
+      var rplcS="5";
+      var finished=false
+      while (!finished){
+        var rep1=string.replace(/a/gi, rplcA);
+        var rep2=rep1.replace(/e/gi, rplcE);
+        var rep3=rep2.replace(/i/gi, rplcI);
+        var rep4=rep3.replace(/o/gi, rplcO);
+        var rep5=rep4.replace(/s/gi, rplcS);
+        finished=true
+      }
+      document.getElementById("screen3").innerHTML=rep5;
+    }
+    function pigLatin(){
+      var sentence=document.getElementById("screen4d").value;
+      var words = sentence.split(" ");
+      var translate = [];
+      var i=0;
+      while(i<words.length){
+        letters = words[i].split("");
+        if (letters.slice(0,1)=="a"||letters.slice(0,1)=="e"||letters.slice(0,1)=="i"||letters.slice(0,1)=="o"||letters.slice(0,1)=="u"||letters.slice(0,1)=="A"||letters.slice(0,1)=="E"||letters.slice(0,1)=="I"||letters.slice(0,1)=="O"||letters.slice(0,1)=="U"){
+          letters.push("ay");
+          word=letters.join('')
+          i++
+        } else {
+        letters.push(letters.splice(0,1)+"ay");
+        word = letters.join('');
+        i++
+      } translate.push(word);
+      }
+      translate = translate.join(" ");
+      document.getElementById("screen4").innerHTML=translate;
+    }
+  </script>
+  <h1>While loops</h1>
+  What is the password?<br><br>
+  <button type="button" onclick="passWord()">Press to begin</button><br><br>
+  Output:
+  <p id="screen1"></p><br><br>
+
+  Letters in a sentence:<br><br>
+  <button type="text" onClick="countLetters()">Press to begin</button><br><br>
+  Output:
+  <p id="screen2"></p><br><br>
+
+  H4ck3r 5p34k:<br><br>
+  <input type="text" id="screen3c" /><br><br>
+  <button type="button" onclick="hackerSpeak()">Press to convert</button><br><br>
+  Output:
+  <p id="screen3"></p><br><br>
+
+  Pig Latin:<br><br>
+  <input type="text" id="screen4d" /><br><br>
+  <button type="button" onclick="pigLatin()">Press to convert</button><br><br>
+  Output:
+  <p id="screen4"></p><br><br>
+</body>
+</html>

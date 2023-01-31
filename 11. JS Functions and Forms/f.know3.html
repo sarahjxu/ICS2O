@@ -1,0 +1,21 @@
+<html>
+<head>
+  <style>
+  </style>
+</head>
+<body>
+  <script>
+    var low, high;
+    low = prompt("Enter a lower number");
+    high = prompt("Enter a higher number");
+    low=Number(low);
+    high=Number(high);
+    function pickaNum(low, high){
+      var range=high-low+1;
+      var num = Math.floor(range*Math.random()+low);
+      return num;
+    }
+    alert(pickaNum(low, high) + " is a number between " + low + " and " + high)
+  </script>
+</body>
+</html>

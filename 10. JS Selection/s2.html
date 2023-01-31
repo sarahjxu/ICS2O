@@ -1,0 +1,40 @@
+<html>
+<head>
+  <style>
+    body {
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/eb/Magic_eight_ball.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 900px;
+      text-align: center;
+      vertical-align: middle;
+      color: white;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <script>
+    var question = prompt("Hello! Time to answer your questions! Please ask!");
+    var answer = Math.floor(8 * Math.random() + 1);
+    if (answer==1) {
+      document.write ("Wall Street market crash. Nothing certain anymore.");
+    } else if (answer==2) {
+      document.write ("Disney makes all dreams come true.");
+    } else if (answer==3) {
+      document.write ("Face yourself. The real anwer is close.");
+    } else if (answer==4) {
+      document.write ("Jungkook thinks that you are correct.");
+    } else if (answer==5) {
+      document.write ("Are roses red?");
+    } else if (answer==6) {
+      document.write ("Action to answer.");
+    } else if (answer==7) {
+      document.write ("Only time will tell.");
+    } else if (answer==8) {
+      document.write ("Fiction and fact are closely intertwined. Don't sink in too deep.");
+    }
+  </script>
+</body>
+</html>

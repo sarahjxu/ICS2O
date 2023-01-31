@@ -1,0 +1,72 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <style>
+    body{
+      background-color: #c2f9ff;
+      text: #b3b3b3;
+      text-align: center;
+      vertical-align: center;
+      margin-top: 140px;
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+    h2, h3 {
+      font-size: 22px;
+    }
+    p {
+      font-size: 18px;
+    }
+    .input{
+      width: 20%;
+      text-align: center;
+      align: center;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    alert ("Welcome to the Higher or Lower Guessing Game! I am thinking of a number between 1 and 10. You have three tries to guess the number. You will be notified whether your guess is above or below the number. If you win, you can receive a prize!");
+    var guess = Number(guess);
+    var guesscount = 3;
+    var total = new Array(5);
+    var number = Math.floor(10 * Math.random() + 1);
+    for (i=0; i<3; i++){
+    guess = prompt("Please enter your guess.");
+    total[i+1] = guess;
+      if (guess == number) {
+        document.write("<h2>Congratulations! Your guess, " + guess + ", was correct!</h2>");
+        break;
+      } else if (guess>10||guess<0) {
+        guesscount--;
+        alert("Please enter a number between 1 and 10. You have " + guesscount +" guesses left.");
+      } else if (guess>number){
+        guesscount--;
+        alert("Guess lower! You have " + guesscount +" guesses left.");
+      } else {
+        guesscount--;
+        alert("Guess higher! You have " + guesscount + " guesses left.");
+      }
+    }
+    document.write ("<h3>Your guesses:</h3>")
+    for (j=0; j<=i; j++){
+      if (j==3) {
+        break;
+      }
+      document.write("<h4>" + total[j+1] + "</h4>")
+    }
+    function myFunction() {
+      var checkBox = document.getElementById("myCheck");
+      var text = document.getElementById("email").innerHTML = '<input type="text" class="input" id="text" placeholder="Please enter email address">';
+    }
+    if (guess == number && guesscount == 2){
+      document.write('<br>You took <b> 2 </b> guesses to find the answer. You receive <b> 500 </b> points.<br><input type="checkbox" id="myCheck" onclick="myFunction()">Check the checkbox to redeem your prize.</input><br><p id="email">Your prize: $10 Indigo Gift Card</p><br><form action="submit.html"><input type="submit" value="Submit"></input></form>');
+    } else if (guess == number && guesscount == 1){
+      document.write('<br>You took <b> 3 </b> guesses to find the answer. You receive <b> 250 </b> points.<br><input type="checkbox" id="myCheck" onclick="myFunction()">Check the checkbox to redeem your prize.</input><br><p id="email">Your prize: $5 Cineplex Gift Card</p><br><form action="submit.html"><input type="submit" value="Submit"></input></form>');
+    } else if (guess == number && guesscount == 3){
+      document.write('<br>You took <b> 1 </b> guess to find the answer. You receive <b> 1000 </b> points.<br><input type="checkbox" id="myCheck" onclick="myFunction()">Check the checkbox to redeem your prize.</input><br><p id="email">Your prize: $20 iTunes Gift Card</p><br><form action="submit.html"><input type="submit" value="Submit"></input></form>');
+    } else {
+      document.write("<br>Unfortunately, no guesses were correct. You receive <b> 0 </b> points. <br>The correct answer was " + number + ".</p>");
+    }
+  </script>
+</body>
+</html>
