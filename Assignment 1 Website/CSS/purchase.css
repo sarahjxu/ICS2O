@@ -1,0 +1,50 @@
+body{background-image: url("../images/neon-city.jpg");
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	margin:0;
+	color: black;
+	font-family: 'Poppins', sans-serif;
+}
+.h1{color: black;
+	margin-left: 285px;
+	margin-right: 285px;
+ 	background-color: white;
+  text-align: center;
+}
+#table {
+  table-layout: fixed;
+  width: 60%;
+  background-color: white;
+	padding: 10px;
+}
+.input{width: 80%
+}
+.input1{width: 60%
+}
+.input2{width: 40%
+}
+.input2.5{width: 30%
+}
+.input3{width: 15%
+}
+.input4{width: 5%
+}
+footer{background-color:#f763d0;
+	margin-bottom: -150;
+  margin-right: 0;
+	position: relative;
+	bottom: 0;
+	height:350px;
+  font-size: 15px;
+	color:white;
+}
+table.dream{width: 700px;
+  border-collapse: separate;
+  border-spacing: 50px 15px;
+	color: white;
+}
+#solo{width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}

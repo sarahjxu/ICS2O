@@ -1,0 +1,50 @@
+.logo {
+  float: center;
+	width: 830%;
+	height: auto;
+	transform: translate(-180px); /*I found out how to translate elements to position them better.*/
+}
+header{text-align: center;
+  margin-right: 0;
+}
+ul {list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #d6aafa;
+}
+li {float: left;
+}
+li a {display: block;
+  color: #0d00c9;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 20px;
+}
+li a:hover {background-color: #d7aafa;
+}
+.flex-container {display: flex; /*I used a flex container to modify the logo/image to my needs, such as centering it and making sure that it was the correct size.*/
+  flex-direction: row;
+	background-image: linear-gradient(to right, #fc00f9, #00effc);
+	justify-content: center;
+	align-content: center;
+}
+.flex-container > div {width: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 15px;
+}
+a:link {text-decoration: none;
+  color: #67e0ca;
+}
+a:visited {text-decoration: none;
+  color: #6600cc;
+}
+a:hover {text-decoration: none;
+  color:#b3ffff;
+}
+a:active {text-decoration: none;
+  color:#ff3399;
+}

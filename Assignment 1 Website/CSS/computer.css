@@ -1,0 +1,45 @@
+body{background-image: url("../images/shanghaii.jpg");
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	margin:0;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+}
+h1{color: black;
+	background-color: #a2f3fc;
+}
+h3{color: white;
+  background-color: #e4a2fc;
+}
+.comp{width: 100%;
+	height: auto;
+}
+#table{background-color: white;
+	border: 0px;
+	opacity: 0.9;
+	color: black;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1250px;
+	text-align: center;
+	border-collapse: collapse;
+}
+td.td1{width:50px;
+	background-color: #edb0ff;
+}
+td.td2{width:100px;
+	background-color: #ffa8e8;
+}
+footer{background-color:#f763d0;
+	margin-bottom: -150;
+  margin-right: 0;
+	position: relative;
+	bottom: 0;
+	height:350px;
+  font-size: 15px;
+}
+table.dream{width: 700px;
+  border-collapse: separate;
+  border-spacing: 50px 15px;
+}

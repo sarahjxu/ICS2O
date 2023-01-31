@@ -1,0 +1,38 @@
+h2, h4{color: black;
+	background-color: #faaaaa;
+	opacity: 0.7;
+	text-align: center;
+	margin-left:10px;
+	margin-right:10px;
+}
+body{margin:0;
+	font-family: 'Poppins', sans-serif;
+}
+.river{background-color:#f2f2f2;
+}
+footer{background-color:#f763d0;
+	margin-bottom: -150;
+  margin-right: 0;
+	position: relative;
+	bottom: 0;
+	height:350px;
+  font-size: 15px;
+	color: white;
+}
+table.dream{width: 700px;
+  border-collapse: separate;
+  border-spacing: 50px 15px;
+	color: white;
+}
+.pic1{width: 50%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.pic2{width: 30%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

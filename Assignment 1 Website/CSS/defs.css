@@ -1,0 +1,86 @@
+body{background-image: url("../images/cyberpunk.png");
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	margin:0;
+  font-family: 'Muli', sans-serif;
+}
+h1{color: white;
+  text-align: center;
+	background-color: #ff009d;
+}
+#table{color: black;
+  background-color: white;
+	margin-left:10px;
+	margin-right:10px;
+	border-style: solid;
+	border-collapse: collapse;
+}
+footer{background-color:#f763d0;
+	margin-bottom: -150;
+  margin-right: 0;
+	position: relative;
+	bottom: 0;
+	height:340px;
+  font-size: 15px;
+	color: white;
+}
+table.dream{width: 700px;
+  border-collapse: separate;
+  border-spacing: 50px 15px;
+	color: white;
+}
+#ram{width: 70%;
+	height: auto;
+}
+#hd{width: 50%;
+	height: auto;
+}
+#processor{width: 50%;
+	height: auto;
+}
+#gpu{width: 80%;
+	height: auto;
+}
+#cool{width: 70%;
+	height: auto;
+}
+#size{width: 100%;
+	height: auto;
+}
+#weight{width: 80%;
+	height: auto;
+}
+#software{width: 60%;
+	height: auto;
+}
+#os{width: 100%;
+	height: auto;
+}
+#peripherals{width: 70%;
+	height: auto;
+}
+#hdd-ssd {width: 100%;
+	height: auto;
+}
+#psu{width: 50%;
+	height: auto;
+}
+#aux{width: 100%;
+	height: auto;
+}
+#monitor{width: 70%;
+	height: auto;
+}
+#motherboard{width: 60%;
+	height: auto;
+}
+#tower{width: 50%;
+	height: auto;
+}
+td:nth-child(4){width: 400px;
+}
+td:nth-child(5){width: 400px;
+}
+td{padding:10
+}

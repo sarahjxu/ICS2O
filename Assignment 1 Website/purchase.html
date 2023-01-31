@@ -1,0 +1,160 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/purchase.css">
+  <link rel="stylesheet" type="text/css" href="css/header-nav.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins|Tomorrow&display=swap" rel="stylesheet">
+  <title>Cart</title>
+</head>
+<body>
+<header>
+  <div class="flex-container">
+    <div><img class="logo" src="images/logo2.jpg" width="72" height="72"></div>
+  </div>
+  </header>
+  <ul>
+    <li><a href="homepage.html">Home</a></li>
+    <li><a href="computer.html">Computers</a></li>
+    <li><a href="defs.html">Olde Terminology</a></li>
+    <li><a href="purchase.html">Purchase</a></li>
+  </ul>
+<script type="text/javascript" src="js/purchase.js"></script>
+</script>
+<h1 class="h1">Purchase Form</h1>
+<p class="h1">Thank you for choosing Olde Electronica! Please fill out the form and press submit to complete your purchase.
+<br>
+<form>
+<table id="table" align="center">
+  <tr>
+  	<td><h3>Computer Model</h3></td>
+  <tr>
+    <td><input type="checkbox" id="myCheck"  onclick="myFunction()">Macbook Air 2018
+    <input type="text" class="input3" id="text" style="display:none" placeholder="Please enter quantity"><br>
+    <input type="checkbox" id="myCheck1"  onclick="myFunction1()">Google Pixelbook
+    <input type="text" class="input3" id="text1" style="display:none" placeholder="Please enter quantity"><br>
+    <input type="checkbox" id="myCheck2"  onclick="myFunction2()">ASUS VivoBook S15 S532FA
+    <input type="text" class="input3" id="text2" style="display:none" placeholder="Please enter quantity"><br>
+    <input type="checkbox" id="myCheck3"  onclick="myFunction3()">The Gaming Computer
+    <input type="text" class="input3" id="text3" style="display:none" placeholder="Please enter quantity"><br>
+    <input type="checkbox" id="myCheck4"  onclick="myFunction4()">The Everyday Computer
+    <input type="text" class="input3" id="text4" style="display:none" placeholder="Please enter quantity"><br>
+    <input type="checkbox" id="myCheck5"  onclick="myFunction5()">The Graphic Design Computer
+    <input type="text" class="input3" id="text5" style="display:none" placeholder="Please enter quantity"><br>
+    <input type="checkbox" id="myCheck6"  onclick="myFunction6()">The High Performance Computer
+    <input type="text" class="input3" id="text6" style="display:none" placeholder="Please enter quantity"><br>
+  </td></tr>
+</table>
+<table id="table" align="center">
+  <tr>
+    <td><h3>Shipping Information</h3></td>
+  </tr>
+  <tr>
+    <td>AE-mail Address:<br><input type="text" name="AEmailaddress" class="input"></td>
+  </tr>
+  <tr>
+    <td>First Name:<br><input type="text" name="firstname" class="input1"></td>
+  </tr>
+  <tr>
+    <td>Last Name:<br><input type="text" name="lastname" class="input1"></td>
+  </tr>
+  <tr>
+  	<td>Address:<br> <input type="text" name="address" class="input"></td>
+  </tr>
+  <tr>
+  	<td>City:<br><input type="text" name="city" class="input1"></td>
+  </tr>
+  <tr>
+  	<td>Province:<br><input type="text" name="province" class="input2"></td>
+  </tr>
+  <tr>
+  	<td>Zip:<br><input type="text" name="zip" class="input2"></td>
+  </tr>
+  <tr>
+  	<td>Empire:<br><input type="text" name="country" class="input1"></td>
+  </tr>
+  <tr>
+    <td>AEther Number:<br>
+      <select name="Empyrea Code" class="input2.5">
+      <option value="Empyrea Code">Select Empyrea</option>
+    	<option value="KaenAda">KaenAda +1</option>
+    	<option value="AmariKa">AmariKa +1</option>
+    	<option value="Brittany">Brittany +44</option>
+      <option value="ChinAsia">ChinAsia +86</option>
+      <option value="COrea">COrea +82</option></select> -
+      <input type="text" name="aethernumber" class="input4"> -
+      <input type="text" name="aethernumber" class="input4"> -
+      <input type="text" name="aethernumber" class="input4"></td>
+  </tr>
+</table>
+<table id="table" align="center">
+  <tr>
+    <td><h3>Card Information</h3></td>
+  </tr>
+  <tr>
+    <td>Card Number:<br><input type="text" name="cardnumber" class="input"></td>
+  <tr>
+    <td>Expiry Month:<br>
+      <select name="expirymonth" class="input2">
+      <option value="select">Select</option>
+      <option value="1">Januarie</option>
+      <option value="2">Februarius</option>
+    	<option value="3">Marche</option>
+      <option value="4">Aprilis</option>
+      <option value="5">Maius</option>
+      <option value="6">Jun</option>
+      <option value="7">Julie</option>
+      <option value="8">Augustus</option>
+      <option value="9">Septembre</option>
+      <option value="10">Octobre</option>
+      <option value="11">Novembre</option>
+      <option value="12">Decembre</option></select></td>
+    <td>Expiry Year:<br>
+      <select name="expiryyear" class="input2">
+        <option value="select">Select</option>
+        <option value="1">3X17</option>
+        <option value="2">3X18</option>
+      	<option value="3">3X19</option>
+        <option value="4">3X20</option>
+        <option value="5">3X21</option>
+        <option value="6">3X22</option></select></td>
+    <td>Secure Code:<br><input type="text" name="securecode" class="input2.5">
+    </td>
+  </tr>
+</table>
+</form>
+</table>
+<form action="thankyou.html">
+<table id="table" align="center">
+  <tr>
+    <td id="solo"><input type="submit" value="Submit"></p></td>
+  </tr>
+</table>
+</form>
+</body>
+<footer align="center">
+  <table class="dream" align="center">
+    <tr valign="top">
+      <td><p>COMPANY</td>
+      <td width="20">COMPUTERS</td>
+      <td>CONTACT</td></tr>
+    <tr>
+      <td valign="top">
+        <p><a href="homepage.html">Home</a><br>
+          <a href="computer.html">Computers</a><br>
+          <a href="defs.html">Olde Terminology</a><br>
+          <a href="purchase.html">Purchase</a></td>
+      <td valign="top">
+        <a href="mac.html">Macbook Air 2018</a><br>
+        <a href="pixel.html">Google Pixelbook</a><br>
+        <a href="vivo.html">ASUS VivoBook S15 S532FA</a><br>
+        <a href="gamer.html">The Gaming Computer</a><br>
+        <a href="every.html">The Everyday Computer</a><br>
+        <a href="graph.html">The Graphic Design Computer</a><br>
+        <a href="perf.html">The High Performance Computer</a></p></td>
+      <td valign="top">
+        <a href="https://www.instagram.com/olde_electronica/">Picstagram</a><br></td>
+    </tr>
+  </table>
+  <p><a href="#top">Back to Top</a></p>
+  <p>&copy; 3X17 Olde Electronica, ALL RIGHTS RESERVED<br>
+</footer>
+</html>
